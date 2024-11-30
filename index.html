@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dougstylist Clothing</title>
+    <link rel="stylesheet" href="style.css">	
+</head>
+<body>
+    <header>
+        <h1 class="logo">Dougstylist Clothing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product-list">
+            <div class="product" data-id="1" data-name="Version 1" data-price="500">
+                <img src="Damit.jpg" alt="T-Shirts">
+                <h2>Version 1</h2>
+                <p>₱500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-id="2" data-name="Version 2" data-price="700">
+                <img src="Damit2.jpg" alt="New Designs">
+                <h2>Version 2</h2>
+                <p>₱700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-id="3" data-name="Version 3" data-price="600">
+                <img src="Damit3.jpg" alt="New Trends">
+                <h2>Version 3</h2>
+                <p>₱600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-id="4" data-name="Version 4" data-price="800">
+                <img src="Damit4.jpg" alt="New Trends">
+                <h2>Version 4</h2>
+                <p>₱800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-id="5" data-name="Version 5" data-price="900">
+                <img src="Damit5.jpg" alt="New Trends">
+                <h2>Version 5</h2>
+                <p>₱900</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-id="6" data-name="Version 6" data-price="1000">
+                <img src="Damit6.jpg" alt="New Trends">
+                <h2>Version 6</h2>
+                <p>₱1000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₱<span id="total-price">0</span></p>
+            <button id="checkout-btn">Check Out</button>
+
+            <!-- Delivery Form (hidden by default) -->
+            <div id="checkout-form" style="display: none;">
+                <h3>Delivery Details</h3>
+                <form id="delivery-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" required><br><br>
+                    
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" required><br><br>
+                    
+                    <label for="contact">Contact Number:</label><br>
+                    <input type="text" id="contact" required><br><br>
+                    
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
